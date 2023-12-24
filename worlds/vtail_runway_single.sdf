@@ -108,7 +108,7 @@
 
     <include>
       <pose degrees="true">0 0 0.2 0 0 90</pose>
-      <uri>model://mini_talon_vtail</uri>
+      <uri>model://mini_talon_vtail_1</uri>
     </include>
 
   </world>
