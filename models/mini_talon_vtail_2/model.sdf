@@ -613,7 +613,7 @@
     <!-- <plugin
       filename="gz-sim-thruster-system"
       name="gz::sim::systems::Thruster">
-      <namespace>mini_talon_vtail</namespace>
+      <namespace>mini_talon_vtail_2</namespace>
       <joint_name>motor_joint</joint_name>
       <thrust_coefficient>-0.01</thrust_coefficient>
       <fluid_density>1.2041</fluid_density>
@@ -826,8 +826,8 @@
       filename="ArduPilotPlugin">
       <!-- Port settings. -->
       <fdm_addr>127.0.0.1</fdm_addr>
-      <fdm_port_in>9012</fdm_port_in>
-      <connectionTimeoutMaxCount>50</connectionTimeoutMaxCount>
+      <fdm_port_in>9002</fdm_port_in>
+      <connectionTimeoutMaxCount>5</connectionTimeoutMaxCount>
       <lock_step>1</lock_step>
       <have_32_channels>0</have_32_channels>
 
@@ -896,7 +896,7 @@
         <servo_min>1000</servo_min>
         <servo_max>2000</servo_max>
         <!-- <type>COMMAND</type>
-        <cmd_topic>/model/mini_talon_vtail/joint/motor_joint/cmd_vel</cmd_topic> -->
+        <cmd_topic>/model/mini_talon_vtail_2/joint/motor_joint/cmd_vel</cmd_topic> -->
 
         <type>VELOCITY</type>
         <p_gain>0.20</p_gain>
@@ -978,7 +978,7 @@
 
   Thrust:
 
-  gz topic -t /model/mini_talon_vtail/joint/motor_joint/cmd_vel -m gz.msgs.Double -p 'data: 1000'
+  gz topic -t /model/mini_talon_vtail_2/joint/motor_joint/cmd_vel -m gz.msgs.Double -p 'data: 1000'
 
   Aileron:
 
